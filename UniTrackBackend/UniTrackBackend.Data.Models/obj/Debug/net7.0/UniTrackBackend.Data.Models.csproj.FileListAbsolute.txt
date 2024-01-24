@@ -1,0 +1,12 @@
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\bin\Debug\net7.0\UniTrackBackend.Data.Models.deps.json
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\bin\Debug\net7.0\UniTrackBackend.Data.Models.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\bin\Debug\net7.0\UniTrackBackend.Data.Models.pdb
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.csproj.AssemblyReference.cache
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.AssemblyInfoInputs.cache
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.AssemblyInfo.cs
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.csproj.CoreCompileInputs.cache
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\refint\UniTrackBackend.Data.Models.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.pdb
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\ref\UniTrackBackend.Data.Models.dll

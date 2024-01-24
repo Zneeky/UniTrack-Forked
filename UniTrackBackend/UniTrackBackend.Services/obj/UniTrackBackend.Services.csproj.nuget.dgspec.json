@@ -1,0 +1,487 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services\\UniTrackBackend.Services.csproj": {}
+  },
+  "projects": {
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj",
+        "projectName": "UniTrackBackend.Api.DTO",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Commons\\UniTrackBackend.Data.Commons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Commons\\UniTrackBackend.Data.Commons.csproj",
+        "projectName": "UniTrackBackend.Data.Commons",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Commons\\UniTrackBackend.Data.Commons.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Commons\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj",
+        "projectName": "UniTrackBackend.Data.Models",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data\\UniTrackBackend.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data\\UniTrackBackend.Data.csproj",
+        "projectName": "UniTrackBackend.Data",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data\\UniTrackBackend.Data.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Commons\\UniTrackBackend.Data.Commons.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Commons\\UniTrackBackend.Data.Commons.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj",
+        "projectName": "UniTrackBackend.Services.Commons",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj",
+        "projectName": "UniTrackBackend.Services.Mappings",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services\\UniTrackBackend.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services\\UniTrackBackend.Services.csproj",
+        "projectName": "UniTrackBackend.Services",
+        "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services\\UniTrackBackend.Services.csproj",
+        "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data\\UniTrackBackend.Data.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data\\UniTrackBackend.Data.csproj"
+              },
+              "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj": {
+                "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Google.Apis.YouTube.v3": {
+              "target": "Package",
+              "version": "[1.64.0.3205, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

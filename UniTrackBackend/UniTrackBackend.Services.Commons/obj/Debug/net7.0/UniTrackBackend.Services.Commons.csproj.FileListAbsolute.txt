@@ -1,0 +1,12 @@
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\bin\Debug\net7.0\UniTrackBackend.Services.Commons.deps.json
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\bin\Debug\net7.0\UniTrackBackend.Services.Commons.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\bin\Debug\net7.0\UniTrackBackend.Services.Commons.pdb
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.csproj.AssemblyReference.cache
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.AssemblyInfoInputs.cache
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.AssemblyInfo.cs
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.csproj.CoreCompileInputs.cache
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\refint\UniTrackBackend.Services.Commons.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.pdb
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\ref\UniTrackBackend.Services.Commons.dll

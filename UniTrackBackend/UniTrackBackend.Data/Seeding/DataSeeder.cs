@@ -42,10 +42,10 @@ public static class DataSeeder
         var unitOfWork = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
         var userManager = scope.ServiceProvider.GetRequiredService<UserManager<User>>();
         _userManager = userManager;
-        
+
+        await SeedSchoolsAsync(unitOfWork: unitOfWork);
         await SeedUsersAsync(roleManager);
         await SeedRolesAsync(roleManager);
-        await SeedSchoolsAsync(unitOfWork: unitOfWork);
         await SeedTeachersAsync(unitOfWork);
         await SeedGradesAsync(unitOfWork);
         await SeedStudentsAsync(unitOfWork);
@@ -76,11 +76,11 @@ public static class DataSeeder
     {
         var users = new List<User>
         {
-            new User { UserName = "user1", FirstName = "John", LastName = "Doe", Email = "user98@example.com", AvatarUrl = "example"},
-            new User { UserName = "user2", FirstName = "John", LastName = "Doe", Email = "user97@example.com", AvatarUrl = "example"},
-            new User { UserName = "user3", FirstName = "John", LastName = "Doe", Email = "user96@example.com", AvatarUrl = "example"},
-            new User { UserName = "user4", FirstName = "John", LastName = "Doe", Email = "user95@example.com", AvatarUrl = "example"},
-            new User { UserName = "user5", FirstName = "John", LastName = "Doe", Email = "user94@example.com", AvatarUrl = "example"},
+            new User { UserName = "user1", FirstName = "John", LastName = "Doe", Email = "user98@example.com", AvatarUrl = "example", SchoolId = 1},
+            new User { UserName = "user2", FirstName = "John", LastName = "Doe", Email = "user97@example.com", AvatarUrl = "example", SchoolId = 1},
+            new User { UserName = "user3", FirstName = "John", LastName = "Doe", Email = "user96@example.com", AvatarUrl = "example", SchoolId = 1},
+            new User { UserName = "user4", FirstName = "John", LastName = "Doe", Email = "user95@example.com", AvatarUrl = "example", SchoolId = 1},
+            new User { UserName = "user5", FirstName = "John", LastName = "Doe", Email = "user94@example.com", AvatarUrl = "example", SchoolId = 1},
         };
         foreach (var user in users)
         {
@@ -114,19 +114,19 @@ public static class DataSeeder
             enumerable = subjects.ToList();
         }
 
-        var grades = await unitOfWork.GradeRepository.GetAllAsync();
-        var gradesEnumerable = grades.ToList();
-        if (grades is null || !gradesEnumerable.Any())
-        {
-            await SeedGradesAsync(unitOfWork);
-            grades = await unitOfWork.GradeRepository.GetAllAsync();
-            gradesEnumerable = grades.ToList();
-        }
+        //var grades = await unitOfWork.GradeRepository.GetAllAsync();
+        //var gradesEnumerable = grades.ToList();
+        //if (grades is null || !gradesEnumerable.Any())
+        //{
+        //    await SeedGradesAsync(unitOfWork);
+        //    grades = await unitOfWork.GradeRepository.GetAllAsync();
+        //    gradesEnumerable = grades.ToList();
+        //}
 
         var teachers = new List<Teacher>
         {
-            new Teacher { UserId = user!.Id, SchoolId = school!.Id, Subjects = enumerable, Grades = new List<Grade> { gradesEnumerable.First() } },
-            new Teacher { UserId = user2!.Id, SchoolId = school.Id, Subjects = enumerable, Grades = new List<Grade> { gradesEnumerable.Last() } }
+            new Teacher { UserId = user!.Id, SchoolId = school!.Id, Subjects = enumerable, /*Grades = new List<Grade> { gradesEnumerable.First() }*/ },
+            new Teacher { UserId = user2!.Id, SchoolId = school.Id, Subjects = enumerable, /*Grades = new List<Grade> { gradesEnumerable.Last() }*/ }
         };
 
         foreach (var teacher in teachers)
