@@ -351,3 +351,9 @@ E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\obj\D
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\obj\Debug\net7.0\UniTrackBackend.Services.Tests.genruntimeconfig.cache
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\obj\Debug\net7.0\ref\UniTrackBackend.Services.Tests.dll
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\appsettings.json
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\Microsoft.AspNet.SignalR.Core.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\Microsoft.AspNet.SignalR.SystemWeb.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\Microsoft.Owin.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\Microsoft.Owin.Host.SystemWeb.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\Microsoft.Owin.Security.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Tests\bin\Debug\net7.0\Owin.dll

@@ -4,6 +4,11 @@ namespace UniTrackBackend.Data.Models;
 
 public class User : IdentityUser
 {
+    public User() 
+    {
+        SentMessages = new List<Message>();
+        ReceivedMessages = new List<Message>();
+    }
     public required string FirstName { get; set; } = null!;
 
     public required string LastName { get; set; } = null!;
@@ -14,4 +19,7 @@ public class User : IdentityUser
 
     public string AvatarUrl { get; set; } = null!;
     public int SchoolId { get; set; }
+
+    public ICollection<Message> SentMessages { get; set; }
+    public ICollection<Message> ReceivedMessages { get; set; }
 }

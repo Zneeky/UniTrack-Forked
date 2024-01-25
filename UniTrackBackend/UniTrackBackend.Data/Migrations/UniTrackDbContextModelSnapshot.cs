@@ -331,6 +331,41 @@ namespace UniTrackBackend.Data.Migrations
                     b.ToTable("Marks");
                 });
 
+            modelBuilder.Entity("UniTrackBackend.Data.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("ReceiverId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("SentAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ReceiverId");
+
+                    b.HasIndex("SenderId");
+
+                    b.ToTable("Messages");
+                });
+
             modelBuilder.Entity("UniTrackBackend.Data.Models.Parent", b =>
                 {
                     b.Property<int>("Id")
@@ -738,6 +773,25 @@ namespace UniTrackBackend.Data.Migrations
                     b.Navigation("Teacher");
                 });
 
+            modelBuilder.Entity("UniTrackBackend.Data.Models.Message", b =>
+                {
+                    b.HasOne("UniTrackBackend.Data.Models.User", "Receiver")
+                        .WithMany("ReceivedMessages")
+                        .HasForeignKey("ReceiverId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("UniTrackBackend.Data.Models.User", "Sender")
+                        .WithMany("SentMessages")
+                        .HasForeignKey("SenderId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Receiver");
+
+                    b.Navigation("Sender");
+                });
+
             modelBuilder.Entity("UniTrackBackend.Data.Models.Parent", b =>
                 {
                     b.HasOne("UniTrackBackend.Data.Models.User", "User")
@@ -830,6 +884,13 @@ namespace UniTrackBackend.Data.Migrations
                     b.Navigation("Absences");
 
                     b.Navigation("Marks");
+                });
+
+            modelBuilder.Entity("UniTrackBackend.Data.Models.User", b =>
+                {
+                    b.Navigation("ReceivedMessages");
+
+                    b.Navigation("SentMessages");
                 });
 #pragma warning restore 612, 618
         }

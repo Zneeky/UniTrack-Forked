@@ -21,6 +21,7 @@ public class UniTrackDbContext : IdentityDbContext<User>
     public DbSet<School> Schools { get; set; } = null!;
     public DbSet<Admin> Admins { get; set; } = null!;
     public DbSet<GradeSubjectTeacher> GradeSubjectTeachers { get; set; } = null!;
+    public DbSet<Message> Messages { get; set; } = null!;
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         
@@ -57,6 +58,16 @@ public class UniTrackDbContext : IdentityDbContext<User>
             .HasOne(gst => gst.Grade)
             .WithMany(g => g.GradeSubjectTeachers)
             .HasForeignKey(gst => gst.GradeId);
-        
+
+        modelBuilder.Entity<Message>()
+            .HasOne(m => m.Sender)
+            .WithMany(s => s.SentMessages)
+            .OnDelete(DeleteBehavior.NoAction);
+
+        modelBuilder.Entity<Message>()
+           .HasOne(m => m.Receiver)
+           .WithMany(s => s.ReceivedMessages)
+           .OnDelete(DeleteBehavior.NoAction);
+
     }
 }
