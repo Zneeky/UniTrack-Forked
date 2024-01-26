@@ -14,5 +14,6 @@ public interface IUnitOfWork : IDisposable
     ISubjectRepository SubjectRepository { get; }
     ITeacherRepository TeacherRepository { get; }
     IRepository<Admin> AdminRepository { get; }
+    IMessageRepository MessageRepository { get; }
     Task SaveAsync();
 }

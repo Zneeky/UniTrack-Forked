@@ -5,18 +5,13 @@ namespace UniTrackBackend.Hubs
 {
     public class ChatHub : Hub
     {
-        public async Task JoinChat(UserChatResultDto conn)
+        public async Task SendMessageToUser(string receiverUserId, string message)
         {
-            await Clients.All
-                .SendAsync("RecieveMessage", "admin", $"{conn.FirstName} {conn.LastName} has joined");
-        }
+            var senderUserId = Context.UserIdentifier;
+            // Logic to save the message to the database
 
-        public async Task JoinSpecificChatRoom(UserChatResultDto conn)
-        {
-            await Groups.AddToGroupAsync(Context.ConnectionId, conn.ChatRoom);
-            await Clients.Group(conn.ChatRoom)
-                .SendAsync("RecieveMessage", "admin", $"{conn.LastName} has joined {conn.ChatRoom}");
-        
+            // Send the message to the specific user
+            await Clients.User(receiverUserId).SendAsync("ReceiveMessage", senderUserId, message);
         }
     }
 }

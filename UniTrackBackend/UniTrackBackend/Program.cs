@@ -1,6 +1,7 @@
 using UniTrackBackend.Data;
 using UniTrackBackend.Data.Commons;
 using UniTrackBackend.Data.Seeding;
+using UniTrackBackend.Hubs;
 using UniTrackBackend.Infrastructure;
 using UniTrackBackend.Middlewares;
 using UniTrackBackend.Services;
@@ -44,6 +45,8 @@ builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddScoped<ISchoolService, SchoolService>();
 builder.Services.AddControllers();
 
+builder.Services.AddSignalR();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwagger();
 builder.Services.AddSwaggerGen();
@@ -56,6 +59,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.MapHub<ChatHub>("/chatHub").RequireAuthorization();
 
 // app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseCors("AllowOrigin");

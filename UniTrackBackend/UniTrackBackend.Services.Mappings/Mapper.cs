@@ -239,4 +239,26 @@ public class Mapper : IMapper
             return null;
         }
     }
+
+    public MessageResultDto? MapMessageResultDto( Message message )
+    {
+        try
+        {
+            var model = new MessageResultDto
+            {
+                SenderId = message.SenderId,
+                ReceiverId = message.ReceiverId,
+                Content = message.Content,
+                SentAt = message.SentAt,
+                IsRead = message.IsRead,
+
+            };
+            return model;
+        }
+        catch (Exception e)
+        {
+            _logger.LogError(e, "Failed to map message to MessageResultDto");
+            return null;
+        }
+    }
 }

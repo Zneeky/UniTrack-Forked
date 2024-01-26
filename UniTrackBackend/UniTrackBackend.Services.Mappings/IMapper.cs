@@ -21,5 +21,6 @@ public interface IMapper
     public Subject? MapSubject(SubjectDto model);
     public SubjectResultDto? MapSubjectResultDto(Subject subject);
     public LoginResultDto? MapLoginResult(string userId, string role, string avatarUrl);
+    public MessageResultDto? MapMessageResultDto(Message message);
 
 }

@@ -18,6 +18,7 @@ public class UnitOfWork : IDisposable, IUnitOfWork
     private EfRepository<School>? _schoolRepository;
     private EfRepository<Admin>? _adminRepository;
     private IRepository<GradeSubjectTeacher> _gradeSubjectTeacherRepository;
+    private IMessageRepository? _messageRepository;
     
     public UnitOfWork(UniTrackDbContext context)
     {
@@ -133,6 +134,16 @@ public class UnitOfWork : IDisposable, IUnitOfWork
             return _adminRepository;
         }
     }
+
+    public IMessageRepository MessageRepository
+    {
+        get
+        {
+            _messageRepository ??= new MessageRepository(_context);
+            return _messageRepository;
+        }
+    }
+
     public void Dispose()
     {
         Dispose(true);
