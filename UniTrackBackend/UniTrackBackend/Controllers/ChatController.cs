@@ -17,13 +17,13 @@ namespace UniTrackBackend.Controllers
             _messageService = messageService;
         }
 
-        [HttpGet("people")]
+        [HttpGet("people/{userId}")]
         public async Task<IActionResult> GetPeopleToChatWith(string userId)
         {
             try
             {
-                var users = null;
-                return Ok(users);
+                var contacts = await _messageService.GetContacts(userId);
+                return Ok(contacts);
 
             }
             catch (Exception ex)
