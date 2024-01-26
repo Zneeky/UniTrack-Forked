@@ -5,6 +5,7 @@ using UniTrackBackend.Hubs;
 using UniTrackBackend.Infrastructure;
 using UniTrackBackend.Middlewares;
 using UniTrackBackend.Services;
+using UniTrackBackend.Services.Chatting;
 using UniTrackBackend.Services.Mappings;
 using UniTrackBackend.Services.SubjectService;
 
@@ -43,6 +44,7 @@ builder.Services.AddScoped<ISubjectService, SubjectService>();
 builder.Services.AddScoped<IAbsenceService, AbsenceService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddScoped<ISchoolService, SchoolService>();
+builder.Services.AddScoped<IMessageService, MessageService>();
 builder.Services.AddControllers();
 
 builder.Services.AddSignalR();
@@ -60,7 +62,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapHub<ChatHub>("/chatHub").RequireAuthorization();
+app.MapHub<ChatHub>("/api/hubs/chatHub").RequireAuthorization();
 
 // app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseCors("AllowOrigin");

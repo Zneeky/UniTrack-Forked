@@ -532,6 +532,20 @@
         "runtime": {
           "bin/placeholder/UniTrackBackend.Services.Commons.dll": {}
         }
+      },
+      "UniTrackBackend.Services.Mappings/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "UniTrackBackend.Api.DTO": "1.0.0",
+          "UniTrackBackend.Data.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UniTrackBackend.Services.Mappings.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UniTrackBackend.Services.Mappings.dll": {}
+        }
       }
     }
   },
@@ -1261,6 +1275,11 @@
       "type": "project",
       "path": "../UniTrackBackend.Services.Commons/UniTrackBackend.Services.Commons.csproj",
       "msbuildProject": "../UniTrackBackend.Services.Commons/UniTrackBackend.Services.Commons.csproj"
+    },
+    "UniTrackBackend.Services.Mappings/1.0.0": {
+      "type": "project",
+      "path": "../UniTrackBackend.Services.Mappings/UniTrackBackend.Services.Mappings.csproj",
+      "msbuildProject": "../UniTrackBackend.Services.Mappings/UniTrackBackend.Services.Mappings.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1271,7 +1290,8 @@
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 7.0.11",
       "UniTrackBackend.Api.DTO >= 1.0.0",
       "UniTrackBackend.Data.Commons >= 1.0.0",
-      "UniTrackBackend.Data.Models >= 1.0.0"
+      "UniTrackBackend.Data.Models >= 1.0.0",
+      "UniTrackBackend.Services.Mappings >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1309,6 +1329,9 @@
             },
             "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
               "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+            },
+            "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj": {
+              "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Mappings\\UniTrackBackend.Services.Mappings.csproj"
             }
           }
         }

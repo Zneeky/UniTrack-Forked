@@ -11,7 +11,7 @@ using UniTrackBackend.Services.Mappings;
 
 namespace UniTrackBackend.Services.Chatting
 {
-    public class MessageService
+    public class MessageService : IMessageService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
@@ -36,7 +36,7 @@ namespace UniTrackBackend.Services.Chatting
                 await _unitOfWork.MessageRepository.AddAsync(message);
                 await _unitOfWork.SaveAsync();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 throw new Exception("The massage could not be saved", e);
             }
@@ -72,7 +72,19 @@ namespace UniTrackBackend.Services.Chatting
             }
             catch (Exception e)
             {
-                throw new Exception("An error occured while ", e);
+                throw new Exception("An error occured while getting the messages", e);
+            }
+        }
+
+        public async Task<List<UserResultDto>> GetContacts (string userId)
+        {
+            try
+            {
+                var usersDtos = await _unitOfWork.MessageRepository.GetContacts(userId);
+                return usersDtos;
+            }catch (Exception e)
+            {
+                throw new Exception("An error occured while getting contacts", e);
             }
         }
 

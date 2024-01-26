@@ -3,6 +3,7 @@ using UniTrackBackend.Data.Commons;
 using UniTrackBackend.Infrastructure;
 using UniTrackBackend.MVC.Services;
 using UniTrackBackend.Services;
+using UniTrackBackend.Services.Chatting;
 using UniTrackBackend.Services.Mappings;
 using UniTrackBackend.Services.SubjectService;
 
@@ -27,6 +28,7 @@ builder.Services.AddScoped<IAbsenceService, AbsenceService>();
 builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddScoped<ISchoolService, SchoolService>();
 builder.Services.AddScoped<IDashboardService, DashboardService>();
+builder.Services.AddScoped<IMessageService, MessageService>();
 var app = builder.Build();
 
 

@@ -24,6 +24,7 @@
       <ProjectReference Include="..\UniTrackBackend.Api.DTO\UniTrackBackend.Api.DTO.csproj" />
       <ProjectReference Include="..\UniTrackBackend.Data.Commons\UniTrackBackend.Data.Commons.csproj" />
       <ProjectReference Include="..\UniTrackBackend.Data.Models\UniTrackBackend.Data.Models.csproj" />
+      <ProjectReference Include="..\UniTrackBackend.Services.Mappings\UniTrackBackend.Services.Mappings.csproj" />
     </ItemGroup>
 
 </Project>
