@@ -2,6 +2,7 @@ using UniTrackBackend.Data.Commons;
 using UniTrackBackend.Data.Database;
 using UniTrackBackend.Data.Models;
 using UniTrackBackend.Data.Repositories;
+using UniTrackBackend.Services.Mappings;
 
 namespace UniTrackBackend.Data;
 
@@ -20,7 +21,7 @@ public class UnitOfWork : IDisposable, IUnitOfWork
     private IRepository<GradeSubjectTeacher> _gradeSubjectTeacherRepository;
     private IMessageRepository? _messageRepository;
     
-    public UnitOfWork(UniTrackDbContext context)
+    public UnitOfWork(UniTrackDbContext context, IMapper mapper)
     {
         _context = context;
     }

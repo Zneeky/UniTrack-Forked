@@ -30,7 +30,7 @@ namespace UniTrackBackend.Services.Chatting
                     SenderId = senderId,
                     ReceiverId = receiverId,
                     Content = content,
-                    SentAt = DateTime.Now,
+                    SentAt = DateTime.UtcNow,
                     IsRead = false
                 };
                 await _unitOfWork.MessageRepository.AddAsync(message);

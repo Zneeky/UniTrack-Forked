@@ -21,3 +21,5 @@ E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data\obj\Debug\net7.
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data\obj\Debug\net7.0\UniTrackBackend.Data.pdb
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data\obj\Debug\net7.0\UniTrackBackend.Data.genruntimeconfig.cache
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data\obj\Debug\net7.0\ref\UniTrackBackend.Data.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data\bin\Debug\net7.0\UniTrackBackend.Services.Mappings.dll
+E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data\bin\Debug\net7.0\UniTrackBackend.Services.Mappings.pdb

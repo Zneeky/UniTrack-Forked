@@ -14,7 +14,8 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "7.0.11",
           "UniTrackBackend.Api.DTO": "1.0.0",
           "UniTrackBackend.Data.Commons": "1.0.0",
-          "UniTrackBackend.Data.Models": "1.0.0"
+          "UniTrackBackend.Data.Models": "1.0.0",
+          "UniTrackBackend.Services.Mappings": "1.0.0"
         },
         "runtime": {
           "UniTrackBackend.Data.dll": {}
@@ -330,6 +331,15 @@
         "runtime": {
           "UniTrackBackend.Services.Commons.dll": {}
         }
+      },
+      "UniTrackBackend.Services.Mappings/1.0.0": {
+        "dependencies": {
+          "UniTrackBackend.Api.DTO": "1.0.0",
+          "UniTrackBackend.Data.Models": "1.0.0"
+        },
+        "runtime": {
+          "UniTrackBackend.Services.Mappings.dll": {}
+        }
       }
     }
   },
@@ -551,6 +561,11 @@
       "sha512": ""
     },
     "UniTrackBackend.Services.Commons/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UniTrackBackend.Services.Mappings/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "7YQlZsEV42IeB0qDXgnzPSNR/GvSgfNBjH6+3+ZRo5DkGR2s8mTDTzS8NeySkHuQsyzzMWYrC4079JLJEXgNTA==",
+  "success": false,
+  "projectFilePath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\SignalRConsoleAppClient\\SignalRConsoleAppClient.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project UniTrackBackend is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project UniTrackBackend supports: net7.0 (.NETCoreApp,Version=v7.0)",
+      "libraryId": "UniTrackBackend",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

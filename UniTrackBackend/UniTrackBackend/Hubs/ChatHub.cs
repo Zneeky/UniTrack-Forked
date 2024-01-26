@@ -11,9 +11,10 @@ namespace UniTrackBackend.Hubs
         {
             _messageService = messageService;
         }
-        public async Task SendMessageToUser(string receiverUserId, string content)
+
+        public async Task SendMessageToUser(string senderUserId,string receiverUserId, string content)
         {
-            var senderUserId = Context.UserIdentifier ?? throw new ArgumentNullException("The senderUserId is null");
+            //var senderUserId = Context.UserIdentifier ?? throw new ArgumentNullException("The senderUserId is null");
             // Logic to save the message to the database
             await _messageService.SaveMessageAsync(senderUserId, receiverUserId, content);
             // Send the message to the specific user

@@ -16,11 +16,9 @@ namespace UniTrackBackend.Data.Repositories
     public class MessageRepository : EfRepository<Message>, IMessageRepository
     {
         private readonly UniTrackDbContext _context;
-        private readonly IMapper _mapper;
-        public MessageRepository(UniTrackDbContext context, IMapper mapper) : base(context)
+        public MessageRepository(UniTrackDbContext context) : base(context)
         {
             _context = context;
-            _mapper = mapper;
         }
 
         public async Task<List<Message>> GetAllMessagesInChatAsync(string senderId, string receiverId)
