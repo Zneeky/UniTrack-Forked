@@ -15,6 +15,7 @@ import { studentGuard } from './shared/services/guards/student.guard';
 import { adminGuard } from './shared/services/guards/admin.guard';
 import { profileGuard } from './shared/services/guards/profile.guard';
 import { authGuard } from './shared/services/guards/auth.guard';
+import { ChatComponent } from './chat/chat/chat.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
       { path: 'reset-password', component: ResetPasswordComponent },
       { path: 'confirm-email', component: ConfirmEmailComponent },
     ],
+  },
+  {
+    path: 'chat',
+    component: ChatComponent,
   },
   {
     path: 'profile',
