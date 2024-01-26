@@ -11,9 +11,12 @@ import { StudentsListModule } from './students-list/students-list.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AdminModule } from './admin/admin.module';
 import { ErrorInterceptor } from './shared/services/error-handler.interceptor';
+import { ChatComponent } from './chat/chat/chat.component';
+import { FormsModule } from '@angular/forms';  // Import FormsModule
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ChatComponent],
   imports: [
     BrowserModule,
     MaterialModule,
@@ -24,7 +27,8 @@ import { ErrorInterceptor } from './shared/services/error-handler.interceptor';
     AppRoutingModule,
     StudentsListModule,
     AdminModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule, 
   ],
   providers: [
     {

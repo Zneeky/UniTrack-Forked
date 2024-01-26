@@ -1,0 +1,41 @@
+<!-- Top Row with People -->
+    <div class="top-row" [style.transform]="'translateX(' + topRowTranslation + ')'">
+      <div class="person" *ngFor="let person of people" (click)="selectChat(person.name)">
+        <img [src]="person.avatar" alt="Person Avatar" />
+      </div>
+    </div>
+    <div class="chat-container">
+    <!-- Side Navigation with Chat History -->
+    <div class="side-nav">
+      <div class="chat-history" *ngFor="let chat of chatHistory" (click)="selectChat(chat.personName)">
+        <div class="chat-history-item">
+            <span>{{ chat.personName }}</span>
+            <p class="last-message">{{ getLastMessage(chat.personName) }}</p>
+          </div>
+      </div>
+    </div>
+  
+    <!-- Central Area for Selected Chat -->
+    <div class="central-chat">
+      <div class="chat-header">
+        <span>{{ selectedChat.personName }}</span>
+      </div>
+      <div class="chat-messages">
+    <div *ngFor="let message of selectedChat.messages.slice().reverse()" class="message-container">
+          <div class="message" [ngClass]="{'sent': message.sentBy === 'me', 'received': message.sentBy === 'friend'}">
+            {{ message.text }}
+          </div>
+        </div>
+      </div>
+      <div class="chat-input">
+        <mat-form-field>
+          <input matInput [(ngModel)]="newMessage" placeholder="Type your message" (keydown.enter)="sendMessage()"/>
+        </mat-form-field>
+        <button class="mb-3" mat-icon-button (click)="sendMessage()">
+          <mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </div>
+  
+  </div>
+  
