@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { tap } from 'rxjs';
+import { MessageResult } from 'src/app/shared/models/message-result';
 import { StudentProfile } from 'src/app/shared/models/student-profile';
 import { UserResult } from 'src/app/shared/models/user-result';
 import { ChatRequestsService } from 'src/app/shared/services/chat.requests.service';
@@ -30,7 +31,7 @@ export class ChatComponent {
   constructor(
     // private teachersService: TeachersService,
     public chatService: ChatService,
-    public chatRequestsService: ChatRequestsService
+    public chatRequestsService: ChatRequestsService,
       ) 
   {}
 
@@ -99,12 +100,27 @@ export class ChatComponent {
   newMessage: string = '';
 
   selectChat(personName: string, userId: string): void {
-    // Find the chat entry in chatHistory based on the person's name
     this.selectedChat = {
       personName: personName,
-      messages: [] as Message[],
+      messages: [],
       receiverUserId: userId
     };
+  
+    // Call getMessagesInChat to load the message history for the selected chat
+    this.chatRequestsService.getMessagesInChat(userId).subscribe(
+      (messageResults: MessageResult[]) => {
+        this.selectedChat.messages = messageResults.map((msgResult) => {
+          return {
+            text: msgResult.content,
+            sentBy: msgResult.senderId === userId ? 'friend' : 'me'
+          };
+        });
+      },
+      (error) => {
+        console.error('Error loading messages:', error);
+        // Handle error (e.g., show an error message to the user)
+      }
+    );
   }
 
   // getLastMessage(personName: string): string {

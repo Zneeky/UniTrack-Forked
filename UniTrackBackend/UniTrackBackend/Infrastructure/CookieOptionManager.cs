@@ -19,7 +19,7 @@ public static class CookieOptionManager
         { 
             HttpOnly = true,
             Secure = true,
-            Expires = DateTime.UtcNow.AddMinutes(2),
+            Expires = DateTime.UtcNow.AddHours(1),
             Domain = "localhost",
             IsEssential = true
         };

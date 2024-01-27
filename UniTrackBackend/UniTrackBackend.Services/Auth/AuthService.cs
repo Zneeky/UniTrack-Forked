@@ -55,7 +55,7 @@ public class AuthService : IAuthService
                     new Claim("sub", user.Id),
                     new Claim("iat", DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString())
                 }),
-                Expires = DateTime.UtcNow.AddMinutes(2), // Short-lived token
+                Expires = DateTime.UtcNow.AddHours(2), // Short-lived token
                 SigningCredentials = credentials
             };
 
