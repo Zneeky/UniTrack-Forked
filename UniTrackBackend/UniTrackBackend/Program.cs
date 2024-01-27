@@ -62,7 +62,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapHub<ChatHub>("/api/hubs/chatHub");/*.RequireAuthorization();*/
+app.MapHub<ChatHub>("/api/hubs/chatHub").RequireAuthorization();
 
 // app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseCors("AllowOrigin");

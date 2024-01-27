@@ -6,7 +6,7 @@ using UniTrackBackend.Services.Chatting;
 
 namespace UniTrackBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/chat")]
     [Authorize]
     [ApiController]
     public class ChatController : ControllerBase

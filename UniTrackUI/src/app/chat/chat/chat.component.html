@@ -30,11 +30,11 @@
       </div>
       <div class="chat-input">
         <mat-form-field>
-          <input matInput [(ngModel)]="message" placeholder="Type your message"/>
+          <input matInput [(ngModel)]="newMessage" placeholder="Type your message"/>
         </mat-form-field>
-        <button (click)="sendMessage(selectedChat.receiverUserId, newMessage)">
+        <button (click)="sendMessage()">
           <mat-icon>send</mat-icon>
-      </button>
+        </button>
       </div>
     </div>
   </div>

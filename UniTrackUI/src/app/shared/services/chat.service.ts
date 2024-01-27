@@ -12,7 +12,7 @@ export class ChatService {
     {
     // Initialize the hubConnection property
     this.hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl('/api/hubs/chatHub', { withCredentials: true }) // Update with the URL to your SignalR hub
+      .withUrl('http://localhost:5036/api/hubs/chatHub', { withCredentials: true }) // Update with the URL to your SignalR hub
       .build();
   }
 

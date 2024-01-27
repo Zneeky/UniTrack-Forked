@@ -151,10 +151,10 @@ export class ChatComponent {
   //   return messages;
   // }
 
-  sendMessage(receiverUserId: string, message: string): void {
-    if (!message.trim()) return; // Prevent sending empty messages
+  sendMessage(): void {
+    if (!this.newMessage.trim()) return; // Prevent sending empty messages
   
-    this.chatService.sendMessageToUser(receiverUserId, message).then(() => {
+    this.chatService.sendMessageToUser(this.selectedChat.receiverUserId, this.newMessage).then(() => {
       const newMessage: Message = {
         text: this.newMessage,
         sentBy: 'me',
@@ -166,7 +166,6 @@ export class ChatComponent {
       // Clear the input after sending the message
       this.newMessage = '';
   
-      // Optionally handle the message sent acknowledgment
       console.log('Message sent');
     }).catch(error => {
       console.error('Error sending message:', error);
