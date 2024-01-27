@@ -123,18 +123,20 @@ export class ChatComponent {
     );
   }
 
-  // getLastMessage(personName: string): string {
-  //   // Find the chat entry in chatHistory based on the person's name
-  //   const chatEntry = this.chatHistory.find(entry => entry.personName === personName);
+  chatHistory: ChatEntry[] = [];
 
-  //   if (chatEntry) {
-  //     // Get the last message from the messages array
-  //     const lastMessage = chatEntry.messages[chatEntry.messages.length - 1];
-  //     return lastMessage ? lastMessage.text : 'No messages';
-  //   } else {
-  //     return 'No messages';
-  //   }
-  // }
+  getLastMessage(personName: string): string {
+    // Find the chat entry in chatHistory based on the person's name
+    const chatEntry = this.chatHistory.find(entry => entry.personName === personName);
+
+    if (chatEntry) {
+      // Get the last message from the messages array
+      const lastMessage = chatEntry.messages[chatEntry.messages.length - 1];
+      return lastMessage ? lastMessage.text : 'No messages';
+    } else {
+      return 'No messages';
+    }
+  }
 
   // generateFakeMessages(count: number): Message[] {
   //   const messages: Message[] = [];

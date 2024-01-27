@@ -1,19 +1,19 @@
 <!-- Top Row with People -->
 <div>
     <div class="top-row" >
-      <div class="person" *ngFor="let contacts of contactsData" (click)="selectChat(contacts.firstName, contacts.userId)">
+      <div class="top-row-person" *ngFor="let contacts of contactsData" (click)="selectChat(contacts.firstName, contacts.userId)">
         {{contacts.firstName}} {{contacts.lastName}}
       </div>
     </div>
     <div class="chat-container">
     <!-- Side Navigation with Chat History -->
-    <!-- <div class="side-nav">
-      <div class="chat-history" *ngFor="let chat of chatHistory" (click)="selectChat(chat.personName)">
+    <div class="side-nav">
+      <div class="person" *ngFor="let contacts of contactsData" (click)="selectChat(contacts.firstName, contacts.userId)">
         <div class="chat-history-item">
-            <span>{{ chat.personName }}</span>
-            <p class="last-message">{{ getLastMessage(chat.personName) }}</p>
+            <span>{{ contacts.firstName }}</span>
+            <p class="last-message">{{ getLastMessage(contacts.firstName) }}</p>
           </div>
-      </div> -->
+      </div>
     </div>
   
     <!-- Central Area for Selected Chat -->
@@ -30,7 +30,7 @@
       </div>
       <div class="chat-input">
         <mat-form-field>
-          <input matInput [(ngModel)]="newMessage" placeholder="Type your message"/>
+          <input matInput [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" placeholder="Type your message"/>
         </mat-form-field>
         <button (click)="sendMessage()">
           <mat-icon>send</mat-icon>
