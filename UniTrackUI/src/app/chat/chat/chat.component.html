@@ -8,10 +8,10 @@
     <div class="chat-container">
     <!-- Side Navigation with Chat History -->
     <div class="side-nav">
-      <div class="person" *ngFor="let contacts of contactsData" (click)="selectChat(contacts.firstName, contacts.userId)">
+      <div class="person" *ngFor="let chat of chatsHistory" (click)="selectChat(chat.firstName, chat.receiverUserId)">
         <div class="chat-history-item">
-            <span>{{ contacts.firstName }}</span>
-            <p class="last-message">{{ getLastMessage(contacts.firstName) }}</p>
+            <span>{{ chat.firstName }}</span>
+            <p class="last-message"></p>
           </div>
       </div>
     </div>

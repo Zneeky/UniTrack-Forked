@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { tap } from 'rxjs';
+import { MessageHistoryResult } from 'src/app/shared/models/message-hisotry';
 import { MessageResult } from 'src/app/shared/models/message-result';
 import { StudentProfile } from 'src/app/shared/models/student-profile';
 import { UserResult } from 'src/app/shared/models/user-result';
@@ -27,7 +28,7 @@ export class ChatComponent {
   
   contactsData: UserResult[] = [];
   message: string = "";
-
+  chatsHistory: MessageHistoryResult[] = [];
   constructor(
     // private teachersService: TeachersService,
     public chatService: ChatService,
@@ -53,6 +54,9 @@ export class ChatComponent {
           console.log(`Message from ${senderUserId}: ${message}`);
     })
   })
+  this.chatRequestsService.getMessageHistory() 
+  .pipe(tap((chat) => (this.chatsHistory = chat)))
+  .subscribe();
 }
 
   // people = [
@@ -123,21 +127,21 @@ export class ChatComponent {
     );
   }
 
-  chatHistory: ChatEntry[] = [];
 
-  getLastMessage(personName: string): string {
-    // Find the chat entry in chatHistory based on the person's name
-    const chatEntry = this.chatHistory.find(entry => entry.personName === personName);
+  // getLastMessage(firstName: string, lastName: string): string {
+  //   // Find the chat entry in chatsHistory based on the person's name
+  //   const chatEntry = this.chatsHistory.find(entry => entry.personName === personName);
 
-    if (chatEntry) {
-      // Get the last message from the messages array
-      const lastMessage = chatEntry.messages[chatEntry.messages.length - 1];
-      return lastMessage ? lastMessage.text : 'No messages';
-    } else {
-      return 'No messages';
-    }
-  }
+  //   if (chatEntry) {
+  //     // Get the last message from the messages array
+  //     const lastMessage = chatEntry.messages[chatEntry.messages.length - 1];
+  //     return lastMessage ? lastMessage.text : 'No messages';
+  //   } else {
+  //     return 'No messages';
+  //   }
+  // }
 
+  
   // generateFakeMessages(count: number): Message[] {
   //   const messages: Message[] = [];
   //   for (let i = 0; i < count; i++) {

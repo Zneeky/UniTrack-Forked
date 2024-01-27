@@ -7,6 +7,7 @@ import { RecommendedMaterial } from '../models/recommended-material';
 import { UserResult } from '../models/user-result';
 import { LocalStorageKeys } from '../enums/local-storage-keys.enum';
 import { MessageResult } from '../models/message-result';
+import { MessageHistoryResult } from '../models/message-hisotry';
 
 @Injectable({
   providedIn: 'root',
@@ -54,5 +55,16 @@ export class ChatRequestsService {
     })
   }
 
-}
+  getMessageHistory():Observable<MessageHistoryResult[]>{
+    const userId = localStorage.getItem(LocalStorageKeys.USER_ID);
 
+    if (!userId) {
+      // Handle the case where USER_ID is not available
+      console.error('USER_ID not found in local storage');
+      // You might want to return an empty observable or handle the error in a different way
+      return of([]);
+    }
+    const formattedUserId = userId.replace(/"/g, '');
+    return this.http.get<MessageHistoryResult[]>('http://localhost:5036/api/chat/messageHistory/' + formattedUserId, { withCredentials: true });
+}
+}
