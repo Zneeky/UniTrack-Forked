@@ -8,6 +8,7 @@ namespace UniTrackBackend.Api.DTO.ResultDtos
 {
     public class MessageHistoryResultDto
     {
+        public string ReceiverUserId { get; set; } = null!;
         public string FirstName { get; set; } = null!;
         public string LastName { get; set; } = null!;
         public string AvatarUrl { get; set; } = null!;

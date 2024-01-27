@@ -79,6 +79,7 @@ namespace UniTrackBackend.Data.Repositories
                     {
                         uniqueChats[otherParty.Id] = new MessageHistoryResultDto
                         {
+                            ReceiverUserId = otherParty.Id,
                             FirstName = otherParty.FirstName,
                             LastName = otherParty.LastName,
                             AvatarUrl = otherParty.AvatarUrl,
