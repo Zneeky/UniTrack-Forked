@@ -59,6 +59,11 @@ export class ChatComponent {
   .subscribe();
 }
 
+  getMessageHistory(){
+    this.chatRequestsService.getMessageHistory() 
+    .pipe(tap((chat) => (this.chatsHistory = chat)))
+    .subscribe();
+  }
   // people = [
   //   { name: 'Alice', avatar: 'path/to/avatar1.jpg' },
   //   { name: 'Bob', avatar: 'path/to/avatar2.jpg' },
