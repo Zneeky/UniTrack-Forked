@@ -27,11 +27,19 @@ export class AuthService {
         withCredentials: true,
       })
       .pipe(
+        tap((user: any) => {
+          console.log('User data:', user);
+        localStorage.setItem(
+          LocalStorageKeys.USER_ID, 
+          JSON.stringify(user.userId)
+        )
+        }
+      ),
         tap((user: any) =>
           localStorage.setItem(
             LocalStorageKeys.USER_ROLE,
             JSON.stringify(user.userRole)
-          )
+          ),
         ),
         switchMap((user: any) => {
           switch (user.userRole) {
