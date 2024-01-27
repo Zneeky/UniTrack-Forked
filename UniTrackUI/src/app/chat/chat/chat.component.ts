@@ -44,6 +44,11 @@ export class ChatComponent {
       this.chatService.startConnection().then(() => {
         this.chatService.registerOnMessageReceived((senderUserId, message) => {
           // Handle the received message here (update your chat UI)
+          const messageObject:Message ={
+            text:message,
+            sentBy:'friend'
+          }
+          this.selectedChat.messages.push(messageObject)
           console.log(`Message from ${senderUserId}: ${message}`);
     })
   })
