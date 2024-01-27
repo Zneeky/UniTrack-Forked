@@ -11,7 +11,7 @@
       <div class="person" *ngFor="let chat of chatsHistory" (click)="selectChat(chat.firstName, chat.receiverUserId)">
         <div class="chat-history-item">
             <span>{{ chat.firstName }}</span>
-            <p class="last-message"></p>
+            <p class="last-message">{{chat.message}}</p>
           </div>
       </div>
     </div>
