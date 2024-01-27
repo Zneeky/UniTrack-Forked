@@ -2,6 +2,7 @@
 <div>
     <div class="top-row" >
       <div class="top-row-person" *ngFor="let contacts of contactsData" (click)="selectChat(contacts.firstName, contacts.userId)">
+        <img [src]="contacts.avatarUrl" alt="pic" class="profile-pic">
         {{contacts.firstName}} {{contacts.lastName}}
       </div>
     </div>
@@ -30,7 +31,7 @@
       </div>
       <div class="chat-input">
         <mat-form-field>
-          <input matInput [(ngModel)]="newMessage" (keyup.enter)="sendMessage()" (keyup.enter)="getMessageHistory()"  placeholder="Type your message"/>
+          <input matInput [(ngModel)]="newMessage" (keyup.enter)="sendMessage()"  placeholder="Type your message"/>
         </mat-form-field>
         <button (click)="sendMessage()">
           <mat-icon>send</mat-icon>

@@ -50,6 +50,7 @@ export class ChatComponent {
             text:message,
             sentBy:'friend'
           }
+          this.getMessageHistory();
           this.selectedChat.messages.push(messageObject)
           console.log(`Message from ${senderUserId}: ${message}`);
     })
@@ -114,6 +115,7 @@ export class ChatComponent {
       console.error('Error sending message:', error);
 
     });
+    this.getMessageHistory();
   }
 }
 
