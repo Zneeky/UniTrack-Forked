@@ -32,6 +32,7 @@ const routes: Routes = [
   {
     path: 'chat',
     component: ChatComponent,
+    canActivate: [profileGuard],
   },
   {
     path: 'profile',
