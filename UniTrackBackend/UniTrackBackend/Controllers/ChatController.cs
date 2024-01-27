@@ -45,5 +45,19 @@ namespace UniTrackBackend.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("messageHistory/{userId}")]
+        public async Task<IActionResult> GetMessageHistory(string userId)
+        {
+            try
+            {
+                var messageHistory = await _messageService.GetMessageHistory(userId);
+                return Ok(messageHistory);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

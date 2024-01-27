@@ -8,5 +8,6 @@ namespace UniTrackBackend.Services.Chatting
         Task<MessageResultDto> GetNewMessage(string senderId, string receiverId);
         Task SaveMessageAsync(string senderId, string receiverId, string content);
         Task<List<UserResultDto>> GetContacts(string userId);
+        Task<List<MessageHistoryResultDto>> GetMessageHistory(string userId);
     }
 }

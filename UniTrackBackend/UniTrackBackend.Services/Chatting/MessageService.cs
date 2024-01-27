@@ -88,6 +88,17 @@ namespace UniTrackBackend.Services.Chatting
             }
         }
 
-
+        public async Task<List<MessageHistoryResultDto>> GetMessageHistory(string userId)
+        {
+            try
+            {
+                var messagesHistory = await _unitOfWork.MessageRepository.GetMessageHistory(userId); 
+                return messagesHistory;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occured while getting contacts", e);
+            }
+        }
     }
 }

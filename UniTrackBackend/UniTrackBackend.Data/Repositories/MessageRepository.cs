@@ -54,6 +54,48 @@ namespace UniTrackBackend.Data.Repositories
             throw new Exception("This ID does not belong to a student or a teacher");
         }
 
+        public async Task<List<MessageHistoryResultDto>> GetMessageHistory(string userId)
+        {
+            try 
+            {
+                // Fetch messages where the user is either the sender or the receiver
+                var messages = await _context.Messages
+                    .Include(m => m.Sender)
+                    .Include(m => m.Receiver)
+                    .Where(m => m.SenderId == userId || m.ReceiverId == userId)
+                    .OrderByDescending(m => m.SentAt) // Assuming you have a DateSent field
+                    .ToListAsync();
+
+                // Create a dictionary to hold unique chat history
+                var uniqueChats = new Dictionary<string, MessageHistoryResultDto>();
+
+                foreach (var message in messages)
+                {
+                    // Determine the other party in the chat
+                    var otherParty = message.SenderId == userId ? message.Receiver : message.Sender;
+
+                    // Check if this chat is already added
+                    if (!uniqueChats.ContainsKey(otherParty.Id))
+                    {
+                        uniqueChats[otherParty.Id] = new MessageHistoryResultDto
+                        {
+                            FirstName = otherParty.FirstName,
+                            LastName = otherParty.LastName,
+                            AvatarUrl = otherParty.AvatarUrl,
+                            Message = message.Content // You might want to modify this based on your requirements
+                        };
+                    }
+                }
+
+                // Return the unique chat histories
+                return uniqueChats.Values.ToList();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Internal error!",ex);
+            }
+        }
+
         public async Task<Message> GetNewMessageAsync(string senderId, string receiverId)
         {
             var message = await _context.Messages.Where(m=>m.SenderId == senderId &&  m.ReceiverId == receiverId).OrderByDescending(m=>m.SentAt).FirstOrDefaultAsync();

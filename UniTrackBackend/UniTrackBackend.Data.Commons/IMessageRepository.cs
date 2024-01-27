@@ -13,5 +13,6 @@ namespace UniTrackBackend.Data.Commons
         Task<List<Message>> GetAllMessagesInChatAsync(string senderId, string receiverId);
         Task<Message> GetNewMessageAsync(string senderId, string receiverId);
         Task<List<UserResultDto>> GetContacts(string userId);
+        Task<List<MessageHistoryResultDto>> GetMessageHistory(string userId);
     }
 }
