@@ -1,23 +1,27 @@
 <!-- Top Row with People -->
 <div>
-  <div class="top-row">
-    <div
-      class="top-row-person"
-      *ngFor="let contacts of contactsData"
-      (click)="selectChat(contacts.firstName, contacts.userId)"
-    >
-      <img [src]="contacts.avatarUrl" alt="pic" class="profile-pic" />
-      {{ contacts.firstName }} {{ contacts.lastName }}
+    <div class="top-row" >
+      <div class="top-row-person" *ngFor="let contacts of contactsData; let i = index " (click)="selectChat(contacts.firstName, contacts.userId , i)">
+        <img [src]="contacts.avatarUrl" alt="pic" class="profile-pic">
+        {{contacts.firstName}} {{contacts.lastName}}
+      </div>
     </div>
   </div>
   <div class="chat-container">
     <!-- Side Navigation with Chat History -->
     <div class="side-nav">
-      <div
-        class="person"
-        *ngFor="let chat of chatsHistory"
-        (click)="selectChat(chat.firstName, chat.receiverUserId)"
-      >
+      <div class="header-side-nav">
+        <h2 class="h2-chat">Chat</h2>
+      </div>
+      <mat-divider style = "margin-bottom: 10px; border-width: 5px ; color:black"></mat-divider>
+      <div class="search-container">
+        <mat-form-field>
+        <mat-label>Search chat</mat-label>
+        <input matInput type="text" [(ngModel)]="searchText" placeholder="Search by name...">
+        </mat-form-field>
+      </div>  
+      
+      <div class="person" *ngFor="let chat of filteredChatHistory(); let i = index" (click)="selectChat(chat.firstName, chat.receiverUserId, i)" [class.selected]="i === selectedChatIndex">
         <div class="chat-history-item">
           <span>{{ chat.firstName }}</span>
           <p class="last-message">{{ chat.message }}</p>
