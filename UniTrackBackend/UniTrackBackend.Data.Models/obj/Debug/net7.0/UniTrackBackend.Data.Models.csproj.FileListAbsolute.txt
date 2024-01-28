@@ -10,3 +10,16 @@ E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debu
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\refint\UniTrackBackend.Data.Models.dll
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.pdb
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\ref\UniTrackBackend.Data.Models.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\bin\Debug\net7.0\UniTrackBackend.Data.Models.deps.json
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\bin\Debug\net7.0\UniTrackBackend.Data.Models.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\bin\Debug\net7.0\UniTrackBackend.Data.Models.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.csproj.AssemblyReference.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.AssemblyInfoInputs.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.AssemblyInfo.cs
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.csproj.CoreCompileInputs.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.sourcelink.json
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\refint\UniTrackBackend.Data.Models.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\UniTrackBackend.Data.Models.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Data.Models\obj\Debug\net7.0\ref\UniTrackBackend.Data.Models.dll

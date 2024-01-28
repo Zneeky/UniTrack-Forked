@@ -24,53 +24,50 @@ interface Message {
   styleUrls: ['./chat.component.scss'],
 })
 export class ChatComponent {
-  
   contactsData: UserResult[] = [];
-  message: string = "";
+  message: string = '';
   chatsHistory: MessageHistoryResult[] = [];
   constructor(
     // private teachersService: TeachersService,
     public chatService: ChatService,
-    public chatRequestsService: ChatRequestsService,
-      ) 
-  {}
-
+    public chatRequestsService: ChatRequestsService
+  ) {}
 
   ngOnInit(): void {
-
     this.chatRequestsService
       .getContacts()
       .pipe(tap((contacts) => (this.contactsData = contacts)))
       .subscribe();
 
-      this.chatService.startConnection().then(() => {
-        this.chatService.registerOnMessageReceived((senderUserId, message) => {
-          // Handle the received message here (update your chat UI)
-          const messageObject:Message ={
-            text:message,
-            sentBy:'friend'
-          }
-          this.getMessageHistory();
-          this.selectedChat.messages.push(messageObject)
-          console.log(`Message from ${senderUserId}: ${message}`);
-    })
-  })
-  this.chatRequestsService.getMessageHistory() 
-  .pipe(tap((chat) => (this.chatsHistory = chat)))
-  .subscribe();
-  
-}
+    this.chatService.startConnection().then(() => {
+      this.chatService.registerOnMessageReceived((senderUserId, message) => {
+        // Handle the received message here (update your chat UI)
+        const messageObject: Message = {
+          text: message,
+          sentBy: 'friend',
+        };
+        this.getMessageHistory();
+        this.selectedChat.messages.push(messageObject);
+        console.log(`Message from ${senderUserId}: ${message}`);
+      });
+    });
+    this.chatRequestsService
+      .getMessageHistory()
+      .pipe(tap((chat) => (this.chatsHistory = chat)))
+      .subscribe();
+  }
 
-  getMessageHistory(){
-    this.chatRequestsService.getMessageHistory() 
-    .pipe(tap((chat) => (this.chatsHistory = chat)))
-    .subscribe();
+  getMessageHistory() {
+    this.chatRequestsService
+      .getMessageHistory()
+      .pipe(tap((chat) => (this.chatsHistory = chat)))
+      .subscribe();
   }
 
   selectedChat: ChatEntry = {
     personName: '',
     messages: [] as Message[],
-    receiverUserId: "",
+    receiverUserId: '',
   };
 
   newMessage: string = '';
@@ -79,15 +76,15 @@ export class ChatComponent {
     this.selectedChat = {
       personName: personName,
       messages: [],
-      receiverUserId: userId
+      receiverUserId: userId,
     };
-  
+
     this.chatRequestsService.getMessagesInChat(userId).subscribe(
       (messageResults: MessageResult[]) => {
         this.selectedChat.messages = messageResults.map((msgResult) => {
           return {
             text: msgResult.content,
-            sentBy: msgResult.senderId === userId ? 'friend' : 'me'
+            sentBy: msgResult.senderId === userId ? 'friend' : 'me',
           };
         });
       },
@@ -97,25 +94,25 @@ export class ChatComponent {
     );
   }
 
-
   sendMessage(): void {
-    if (!this.newMessage.trim()) return; 
-  
-    this.chatService.sendMessageToUser(this.selectedChat.receiverUserId, this.newMessage).then(() => {
-      const newMessage: Message = {
-        text: this.newMessage,
-        sentBy: 'me',
-      };
-      this.selectedChat.messages.push(newMessage);
-  
-      this.newMessage = '';
-  
-      console.log('Message sent');
-    }).catch(error => {
-      console.error('Error sending message:', error);
+    if (!this.newMessage.trim()) return;
 
-    });
+    this.chatService
+      .sendMessageToUser(this.selectedChat.receiverUserId, this.newMessage)
+      .then(() => {
+        const newMessage: Message = {
+          text: this.newMessage,
+          sentBy: 'me',
+        };
+        this.selectedChat.messages.push(newMessage);
+
+        this.newMessage = '';
+
+        console.log('Message sent');
+      })
+      .catch((error) => {
+        console.error('Error sending message:', error);
+      });
     this.getMessageHistory();
   }
 }
-

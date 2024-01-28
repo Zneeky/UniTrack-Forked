@@ -10,3 +10,15 @@ E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\refint\UniTrackBackend.Services.Commons.dll
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.pdb
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\ref\UniTrackBackend.Services.Commons.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\bin\Debug\net7.0\UniTrackBackend.Services.Commons.deps.json
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\bin\Debug\net7.0\UniTrackBackend.Services.Commons.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\bin\Debug\net7.0\UniTrackBackend.Services.Commons.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.AssemblyInfoInputs.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.AssemblyInfo.cs
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.csproj.CoreCompileInputs.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.sourcelink.json
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\refint\UniTrackBackend.Services.Commons.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\UniTrackBackend.Services.Commons.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\obj\Debug\net7.0\ref\UniTrackBackend.Services.Commons.dll

@@ -1,37 +1,59 @@
 <!-- Top Row with People -->
 <div>
-    <div class="top-row" >
-      <div class="top-row-person" *ngFor="let contacts of contactsData" (click)="selectChat(contacts.firstName, contacts.userId)">
-        <img [src]="contacts.avatarUrl" alt="pic" class="profile-pic">
-        {{contacts.firstName}} {{contacts.lastName}}
-      </div>
+  <div class="top-row">
+    <div
+      class="top-row-person"
+      *ngFor="let contacts of contactsData"
+      (click)="selectChat(contacts.firstName, contacts.userId)"
+    >
+      <img [src]="contacts.avatarUrl" alt="pic" class="profile-pic" />
+      {{ contacts.firstName }} {{ contacts.lastName }}
     </div>
-    <div class="chat-container">
+  </div>
+  <div class="chat-container">
     <!-- Side Navigation with Chat History -->
     <div class="side-nav">
-      <div class="person" *ngFor="let chat of chatsHistory" (click)="selectChat(chat.firstName, chat.receiverUserId)">
+      <div
+        class="person"
+        *ngFor="let chat of chatsHistory"
+        (click)="selectChat(chat.firstName, chat.receiverUserId)"
+      >
         <div class="chat-history-item">
-            <span>{{ chat.firstName }}</span>
-            <p class="last-message">{{chat.message}}</p>
-          </div>
+          <span>{{ chat.firstName }}</span>
+          <p class="last-message">{{ chat.message }}</p>
+        </div>
       </div>
     </div>
-  
+
     <!-- Central Area for Selected Chat -->
     <div class="central-chat">
       <div class="chat-header">
         <span>{{ selectedChat.personName }}</span>
       </div>
       <div class="chat-messages">
-    <div *ngFor="let message of selectedChat.messages.slice().reverse()" class="message-container">
-          <div class="message" [ngClass]="{'sent': message.sentBy === 'me', 'received': message.sentBy === 'friend'}">
+        <div
+          *ngFor="let message of selectedChat.messages.slice().reverse()"
+          class="message-container"
+        >
+          <div
+            class="message"
+            [ngClass]="{
+              sent: message.sentBy === 'me',
+              received: message.sentBy === 'friend'
+            }"
+          >
             {{ message.text }}
           </div>
         </div>
       </div>
       <div class="chat-input">
-        <mat-form-field>
-          <input matInput [(ngModel)]="newMessage" (keyup.enter)="sendMessage()"  placeholder="Type your message"/>
+        <mat-form-field class="input-field">
+          <input
+            matInput
+            [(ngModel)]="newMessage"
+            (keyup.enter)="sendMessage()"
+            placeholder="Type your message"
+          />
         </mat-form-field>
         <button (click)="sendMessage()">
           <mat-icon>send</mat-icon>
@@ -39,4 +61,4 @@
       </div>
     </div>
   </div>
-  
+</div>

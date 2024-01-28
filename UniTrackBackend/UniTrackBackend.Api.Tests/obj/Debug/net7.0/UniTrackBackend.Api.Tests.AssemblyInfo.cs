@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniTrackBackend.Api.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+440c178a9dad0f9097bef0e94ea8dc4d10add871")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniTrackBackend.Api.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniTrackBackend.Api.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UniTrackBackend.Services.Commons
-build_property.ProjectDir = E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\
+build_property.ProjectDir = C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Commons\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
