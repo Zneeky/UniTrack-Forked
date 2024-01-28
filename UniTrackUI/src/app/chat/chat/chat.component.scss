@@ -44,6 +44,11 @@
     margin-bottom: 5px;
     margin-top: 19px;
   }
+  .person:hover {
+    background-color: #e6e3e36d; /* Change to the desired hover background color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box-shadow for a subtle effect */
+    cursor: pointer; /* Change the cursor to indicate interactivity */
+  }
 
   .person.selected{
     background-color: #93bbea41;
