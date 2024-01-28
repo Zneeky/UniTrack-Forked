@@ -33,26 +33,55 @@
 }
 
 .person {
-  height: 10%;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-right: 20px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 10%;
-  flex-basis: calc(5% - 10px);
-  margin: 10px;
+  padding: 12px 16px; // Increase padding for better spacing
+  margin-bottom: 10px; // Add space between chat entries
+  background-color: #fff; // Use a white background for each entry
+  border-radius: 15px; // Rounded corners for a modern look
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  transition: background-color 0.3s, box-shadow 0.3s; // Smooth transition for hover effects
+  cursor: pointer; // Ensure it's clear these are clickable
+  border: none; // Removing the border for a cleaner design
 }
 
 .person.selected {
-  background-color: #93bbea41;
+  background-color: #54a7e7; // A light blue to indicate the selected chat
 }
 
 .person:hover {
-  background-color: #e6e3e36d; /* Change to the desired hover background color */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box-shadow for a subtle effect */
-  cursor: pointer; /* Change the cursor to indicate interactivity */
+  background-color: #f9f9f9; // A very light grey for hover, subtle indication
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); // Slightly larger shadow on hover
+}
+
+.chat-history-avatar {
+  width: 40px; // Avatar size
+  height: 40px; // Avatar size
+  border-radius: 50%; // Circular avatar
+  margin-right: 12px; // Space between avatar and text
+  object-fit: cover; // Ensure the image covers the area appropriately
+}
+
+.chat-history-content {
+  overflow: hidden; // Hide overflow
+  display: flex; // Use flex to align the items
+  flex-direction: column; // Stack name and message vertically
+}
+
+.chat-person-name {
+  font-weight: bold;
+  cursor: pointer; // Make the name bold
+  color: #0c0c0c; // Dark color for the name
+  font-size: 1rem; // Slightly larger font size for the name
+  margin-bottom: 4px; // Space between name and message
+}
+
+.last-message {
+  font-size: 0.85rem; // Smaller font size for the last message
+  color: #3b3b3b; // Lighter text color for the message
+  white-space: nowrap; // Keep it in a single line
+  overflow: hidden; // Avoid text spilling out
+  text-overflow: ellipsis; // Add ellipsis at the end if the text is too long
 }
 
 .header-side-nav {
@@ -89,17 +118,6 @@ img.profile-pic {
   z-index: 0;
 }
 
-.chat-history {
-  padding: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-bottom: 10px;
-  border: 1px solid #adceae;
-}
-
-.chat-history:hover {
-  background-color: #f3cececb;
-}
 
 .central-chat {
   flex: 1;

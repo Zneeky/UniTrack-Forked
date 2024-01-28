@@ -22,7 +22,8 @@
       
       <div class="person" *ngFor="let chat of filteredChatHistory(); let i = index" (click)="selectChat(chat.firstName, chat.receiverUserId, i)" [class.selected]="i === selectedChatIndex">
         <div class="chat-history-item">
-          <span>{{ chat.firstName }}</span>
+          <img [src]="chat.avatarUrl" alt="{{ chat.firstName }}" class="chat-history-avatar">
+          <span class="chat-person-name">{{ chat.firstName }}</span>
           <p class="last-message">{{ chat.message }}</p>
         </div>
       </div>
