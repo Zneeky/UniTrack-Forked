@@ -1,57 +1,58 @@
 .chat-container {
-    display: flex;
-    height: 83vh;
-    width: 100vw;
-    overflow-x: auto;
-    flex-direction: row; 
-  }
-  
-  .top-row {
-    height: 7vh;
-    display: flex;
-    padding: 10px;
-    background-color: #e0e0e0;
-    transition: transform 0.3s;
-    border-bottom: 1px solid #ccc;
-    overflow-x: auto;
-    white-space: nowrap; 
+  display: flex;
+  height: 83vh;
+  width: 100%;
+  overflow-x: auto;
+  flex-direction: row;
+  background-color: #efeded;
+}
+
+.top-row {
+  height: 9vh;
+  display: flex;
+  padding: 10px;
+  background-color: #efeded;
+  transition: transform 0.3s;
+  border-bottom: 1px solid #dfdddd;
+  white-space: nowrap;
+}
+
+.top-row-person {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-basis: calc(5% - 10px);
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.person {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  flex-basis: calc(5% - 10px);
+  margin: 10px;
+}
+
+  .person.selected{
+    background-color: #93bbea41;
   }
 
-  .top-row-person {
-    height: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    flex-basis: calc(5% - 10px);
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-
-  .person {
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 10%;
-    flex-basis: calc(5% - 10px);
-    margin-bottom: 5px;
-    margin-top: 19px;
-  }
   .person:hover {
     background-color: #e6e3e36d; /* Change to the desired hover background color */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box-shadow for a subtle effect */
     cursor: pointer; /* Change the cursor to indicate interactivity */
-  }
-
-  .person.selected{
-    background-color: #93bbea41;
   }
 
   .header-side-nav{
@@ -74,6 +75,11 @@
     text-decoration: underline;
   }
 
+img.profile-pic {
+  height: 40px;
+  border-radius: 50%;
+}
+
   .side-nav {
     flex: 0 0 300px;
     overflow-y: auto;
@@ -84,79 +90,123 @@
     z-index: 0; 
   }
 
-  .chat-history {
-    padding: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
-    border: 1px solid #adceae;
-  }
-  
-  .chat-history:hover {
-    background-color: #f3cececb;
-  }
-  
-  .central-chat {
-    flex: 1;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .chat-header {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .chat-messages {
-    flex: 1;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column-reverse; 
-  }
-  
-  .message-container {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin: 10px;
-  }
-  
-  .message {
-    padding: 10px;
-    border-radius: 8px;
-    max-width: 70%;
-    word-wrap: break-word;
-  }
-  
-  .sent {
-    background-color: #4caf50;
-    color: white;
-    align-self: flex-end;
-    border: 1px solid #2e7d32;
-  }
-  
-  .received {
-    background-color: #ddd;
-    align-self: flex-start;
-    border: 1px solid #ccc;
-  }
-  
-  .chat-input {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
-    border-top: 1px solid #ccc;
-  }
-  
-  mat-form-field {
-    flex: 1;
-    margin-right: 10px;
-  }
-  
-  button {
-    min-width: 40px;
-  }
-  
+.chat-history {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+  border: 1px solid #adceae;
+}
+
+.chat-history:hover {
+  background-color: #f3cececb;
+}
+
+.central-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  font-size: 18px;
+  font-weight: bold;
+  height: 7vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #e3e4e1;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.central-chat .chat-header span {
+  padding-left: 20px;
+  color: #474747;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+}
+
+.message-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.sent {
+  background: rgb(114, 176, 29);
+  background: linear-gradient(0deg, #83b839 39%, rgb(188, 238, 70) 100%);
+  color: white;
+  align-self: flex-end;
+  border: 1px solid #83b839;
+}
+
+.received {
+  background: rgb(156, 158, 153);
+  background: linear-gradient(
+    0deg,
+    rgb(202, 202, 199) 39%,
+    rgb(240, 239, 239) 100%
+  );
+  align-self: flex-start;
+  border: 1px solid #ccc;
+}
+
+.chat-input {
+  display: flex;
+  align-items: flex-start;
+  margin-top: auto;
+}
+
+.input-field {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Override Angular Material's input style */
+.input-field mat-label,
+.input-field .mat-form-field-infix {
+  border-radius: 20px;
+  background-color: #f0f0f0; /* Set background color */
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: white;
+  background: rgb(114, 176, 29);
+  background: linear-gradient(0deg, #83b839 39%, rgb(188, 238, 70) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+  letter-spacing: 0.05em;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+button:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}

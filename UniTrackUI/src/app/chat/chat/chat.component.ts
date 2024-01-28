@@ -26,13 +26,14 @@ interface Message {
 export class ChatComponent {
   searchText: string = '';
   contactsData: UserResult[] = [];
-  message: string = "";
+  message: string = '';
   chatsHistory: MessageHistoryResult[] = [];
 selected: any;
 color: any;
   constructor(
     // private teachersService: TeachersService,
     public chatService: ChatService,
+
     public chatRequestsService: ChatRequestsService,
       ) 
       
@@ -40,7 +41,6 @@ color: any;
   selectedChatIndex: number | null = null;
 
   ngOnInit(): void {
-
     this.chatRequestsService
       .getContacts()
       .pipe(tap((contacts) => (this.contactsData = contacts)))
@@ -69,10 +69,11 @@ color: any;
   
 }
 
-  getMessageHistory(){
-    this.chatRequestsService.getMessageHistory() 
-    .pipe(tap((chat) => (this.chatsHistory = chat)))
-    .subscribe();
+  getMessageHistory() {
+    this.chatRequestsService
+      .getMessageHistory()
+      .pipe(tap((chat) => (this.chatsHistory = chat)))
+      .subscribe();
   }
 
     filteredChatHistory(): MessageHistoryResult[] {
@@ -84,7 +85,7 @@ color: any;
   selectedChat: ChatEntry = {
     personName: '',
     messages: [] as Message[],
-    receiverUserId: "",
+    receiverUserId: '',
   };
 
   newMessage: string = '';
@@ -92,18 +93,17 @@ color: any;
     this.selectedChat = {
       personName: personName,
       messages: [],
-      receiverUserId: userId
+      receiverUserId: userId,
     };
     this.selectedChatIndex = index;    
    
-    
 
     this.chatRequestsService.getMessagesInChat(userId).subscribe(
       (messageResults: MessageResult[]) => {
         this.selectedChat.messages = messageResults.map((msgResult) => {
           return {
             text: msgResult.content,
-            sentBy: msgResult.senderId === userId ? 'friend' : 'me'
+            sentBy: msgResult.senderId === userId ? 'friend' : 'me',
           };
         });
       },
@@ -113,25 +113,25 @@ color: any;
     );
   }
 
-
   sendMessage(): void {
-    if (!this.newMessage.trim()) return; 
-  
-    this.chatService.sendMessageToUser(this.selectedChat.receiverUserId, this.newMessage).then(() => {
-      const newMessage: Message = {
-        text: this.newMessage,
-        sentBy: 'me',
-      };
-      this.selectedChat.messages.push(newMessage);
-  
-      this.newMessage = '';
-  
-      console.log('Message sent');
-    }).catch(error => {
-      console.error('Error sending message:', error);
+    if (!this.newMessage.trim()) return;
 
-    });
+    this.chatService
+      .sendMessageToUser(this.selectedChat.receiverUserId, this.newMessage)
+      .then(() => {
+        const newMessage: Message = {
+          text: this.newMessage,
+          sentBy: 'me',
+        };
+        this.selectedChat.messages.push(newMessage);
+
+        this.newMessage = '';
+
+        console.log('Message sent');
+      })
+      .catch((error) => {
+        console.error('Error sending message:', error);
+      });
     this.getMessageHistory();
   }
 }
-

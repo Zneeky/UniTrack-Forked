@@ -17,3 +17,23 @@ E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\ob
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\refint\UniTrackBackend.Services.Mappings.dll
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.pdb
 E:\Projects\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\ref\UniTrackBackend.Services.Mappings.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Services.Mappings.deps.json
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Services.Mappings.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Services.Mappings.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Api.DTO.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Data.Models.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Services.Commons.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Api.DTO.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Data.Models.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\bin\Debug\net7.0\UniTrackBackend.Services.Commons.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.csproj.AssemblyReference.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.AssemblyInfoInputs.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.AssemblyInfo.cs
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.csproj.CoreCompileInputs.cache
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.sourcelink.json
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.csproj.CopyComplete
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\refint\UniTrackBackend.Services.Mappings.dll
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\UniTrackBackend.Services.Mappings.pdb
+C:\Users\Laptop\Desktop\CityVox FE views\UniTrack-Forked\UniTrackBackend\UniTrackBackend.Services.Mappings\obj\Debug\net7.0\ref\UniTrackBackend.Services.Mappings.dll

@@ -802,19 +802,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Arki\\.nuget\\packages\\": {}
+    "C:\\Users\\Laptop\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj",
       "projectName": "UniTrackBackend.Api.DTO",
-      "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj",
-      "packagesPath": "C:\\Users\\Arki\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\obj\\",
+      "projectPath": "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\UniTrackBackend.Api.DTO.csproj",
+      "packagesPath": "C:\\Users\\Laptop\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Api.DTO\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Arki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Laptop\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -822,17 +827,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
-              "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
+            "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj": {
+              "projectPath": "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Data.Models\\UniTrackBackend.Data.Models.csproj"
             },
-            "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj": {
-              "projectPath": "E:\\Projects\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj"
+            "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj": {
+              "projectPath": "C:\\Users\\Laptop\\Desktop\\CityVox FE views\\UniTrack-Forked\\UniTrackBackend\\UniTrackBackend.Services.Commons\\UniTrackBackend.Services.Commons.csproj"
             }
           }
         }
@@ -862,7 +868,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
