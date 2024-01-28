@@ -44,16 +44,41 @@
     margin-bottom: 5px;
     margin-top: 19px;
   }
-  
+
+  .person.selected{
+    background-color: #93bbea41;
+  }
+
+  .header-side-nav{
+    text-align: center;
+    height: 5vh;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+  }
+  .h2-chat
+  {
+    //text
+    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: underline;
+  }
+
   .side-nav {
     flex: 0 0 300px;
     overflow-y: auto;
     padding: 10px;
-    background-color: #b3b3b3;
-    border-right: 1px solid #ccc;
+    background-color: #8e8e8e;
+    border-top: 3px solid #000000;
+    border-right: 3px solid #000000;
     z-index: 0; 
   }
-  
+
   .chat-history {
     padding: 8px;
     cursor: pointer;
@@ -63,7 +88,7 @@
   }
   
   .chat-history:hover {
-    background-color: #ddddddcb;
+    background-color: #f3cececb;
   }
   
   .central-chat {
