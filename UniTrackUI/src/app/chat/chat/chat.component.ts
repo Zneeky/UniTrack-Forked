@@ -151,6 +151,19 @@ color: any;
 
   }
 
+  changeBackgroundToImage5(): void {
+    const url = 'url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5Ni0wMDlfMS1rcm9pcjRkay5qcGc.jpg)';
+    localStorage.setItem(LocalStorageKeys.BACKGROUND_ID,url)
+    this.centralChatBackgroundImage = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+
+  }
+  changeBackgroundToImage6(): void {
+    const url = 'url(https://www.bhphotovideo.com/images/images500x500/Savage_27_12_107_x_12yds_Background_1441903824_45483.jpg)';
+    localStorage.setItem(LocalStorageKeys.BACKGROUND_ID,url)
+    this.centralChatBackgroundImage = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+
+  }
+
 
 
   

@@ -305,3 +305,11 @@ button:active {
   height: 100%;/* Set the width and height of the image to fill the button */ /* Set the image height to fill the button */
   object-fit: cover; /* Ensure the image covers the button without distortion */
 }
+
+.text-overlay {
+  position: absolute;
+  color: #72B01D;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
