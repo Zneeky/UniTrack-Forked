@@ -227,14 +227,11 @@ img.profile-pic {
 }
 
 .received {
-  background: rgb(156, 158, 153);
-  background: linear-gradient(
-    0deg,
-    rgb(202, 202, 199) 39%,
-    rgb(240, 239, 239) 100%
-  );
+  background: rgb(44, 40, 32);
+  color: white;
   align-self: flex-start;
   font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
 }
 
 .chat-input {
