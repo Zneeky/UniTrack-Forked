@@ -30,9 +30,10 @@
     </div>
 
     <!-- Central Area for Selected Chat -->
-    <div class="central-chat">
+    <div class="central-chat" [style.backgroundImage]="centralChatBackgroundImage">
       <div class="chat-header">
         <span>{{ selectedChat.personName }}</span>
+        <button id="settingsButton" (click)="toggleSettings()"></button>
       </div>
       <div class="chat-messages">
         <div
@@ -65,4 +66,17 @@
       </div>
     </div>
   </div>
+
+  <div class="overlay" *ngIf="showSettings">
+    <div class="settings-div">
+
+      <h1>Themes</h1>
+        <button id="Theme1" (click)="toggleSettings();changeBackgroundToImage1()"> <img src="https://images.assetsdelivery.com/compings_v2/mariabo2015/mariabo20152107/mariabo2015210700030.jpg"  alt="Image Description" class="button-image"></button>
+        <button id="Theme1" (click)="toggleSettings();changeBackgroundToImage2()"> <img src="https://images.assetsdelivery.com/compings_v2/mariabo2015/mariabo20152107/mariabo2015210700027.jpg"  alt="Image Description" class="button-image"></button>
+        <button id="Theme1" (click)="toggleSettings();changeBackgroundToImage3()"> <img src="https://media.istockphoto.com/id/1256183538/vector/hand-drawn-seamless-pattern-of-creatives-themes-doodle-element-set-vector-illustration.jpg?s=612x612&w=0&k=20&c=gkbWqXQqegrq1pwwY8H7k-QPavmBAnQlbZOhbwM7WV4="  alt="Image Description" class="button-image"></button>
+        <button id="Theme1" (click)="toggleSettings();changeBackgroundToImage4()"> <img src="https://img.freepik.com/premium-vector/back-school-doodle-sketch-cartoon-seamless-pattern_221062-914.jpg"  alt="Image Description" class="button-image"></button>
+
+
+    </div>
+</div>
 </div>

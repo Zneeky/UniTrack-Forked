@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { tap } from 'rxjs';
+import { LocalStorageKeys } from 'src/app/shared/enums/local-storage-keys.enum';
 import { MessageHistoryResult } from 'src/app/shared/models/message-hisotry';
 import { MessageResult } from 'src/app/shared/models/message-result';
 import { StudentProfile } from 'src/app/shared/models/student-profile';
 import { UserResult } from 'src/app/shared/models/user-result';
 import { ChatRequestsService } from 'src/app/shared/services/chat.requests.service';
 import { ChatService } from 'src/app/shared/services/chat.service';
+
+
 
 interface ChatEntry {
   personName: string;
@@ -23,7 +26,8 @@ interface Message {
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.scss'],
 })
-export class ChatComponent {
+export class ChatComponent implements OnInit {
+
   searchText: string = '';
   contactsData: UserResult[] = [];
   message: string = '';
@@ -39,8 +43,12 @@ color: any;
       
   {}
   selectedChatIndex: number | null = null;
-
+  showSettings: boolean = false;
+  centralChatBackgroundImage: any = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+  
   ngOnInit(): void {
+    
+    
     this.chatRequestsService
       .getContacts()
       .pipe(tap((contacts) => (this.contactsData = contacts)))
@@ -112,6 +120,42 @@ color: any;
       }
     );
   }
+  toggleSettings(): void {
+    this.showSettings = !this.showSettings;
+  }
+  changeCentralChatBackground(color: string): void {
+    this.centralChatBackgroundImage = color;
+  }
+
+  changeBackgroundToImage1(): void {
+    const url ='url("https://images.assetsdelivery.com/compings_v2/mariabo2015/mariabo20152107/mariabo2015210700030.jpg")';
+    localStorage.setItem(LocalStorageKeys.BACKGROUND_ID,url)
+    this.centralChatBackgroundImage = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+  }
+
+  changeBackgroundToImage2(): void {
+    const url = 'url("https://images.assetsdelivery.com/compings_v2/mariabo2015/mariabo20152107/mariabo2015210700027.jpg")';
+    localStorage.setItem(LocalStorageKeys.BACKGROUND_ID,url)
+    this.centralChatBackgroundImage = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+  }
+
+  changeBackgroundToImage3(): void {
+    const url = 'url("https://media.istockphoto.com/id/1256183538/vector/hand-drawn-seamless-pattern-of-creatives-themes-doodle-element-set-vector-illustration.jpg?s=612x612&w=0&k=20&c=gkbWqXQqegrq1pwwY8H7k-QPavmBAnQlbZOhbwM7WV4=")';
+    localStorage.setItem(LocalStorageKeys.BACKGROUND_ID,url)
+    this.centralChatBackgroundImage = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+  }
+  changeBackgroundToImage4(): void {
+    const url = 'url(" https://img.freepik.com/premium-vector/back-school-doodle-sketch-cartoon-seamless-pattern_221062-914.jpg")';
+    localStorage.setItem(LocalStorageKeys.BACKGROUND_ID,url)
+    this.centralChatBackgroundImage = localStorage.getItem(LocalStorageKeys.BACKGROUND_ID);
+
+  }
+
+
+
+  
+
+  
 
   sendMessage(): void {
     if (!this.newMessage.trim()) return;
@@ -133,5 +177,10 @@ color: any;
         console.error('Error sending message:', error);
       });
     this.getMessageHistory();
+
+    
+    
   }
+
+ 
 }
