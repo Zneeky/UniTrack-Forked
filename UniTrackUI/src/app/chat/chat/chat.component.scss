@@ -126,6 +126,35 @@ img.profile-pic {
   transition: background-color 0.3s; // Smooth transition for any background color change
 }
 
+.no-chat-selected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;  
+  width: 100vw;// Ensure it takes the full height of the container
+}
+
+.icon-size {
+  color:#72B01D;
+  font-size: 150px;
+  height: 150px;
+  width: 150px;
+}
+.text-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.your-messages-text {
+  font-size: 1.5em;
+}
+
+.select-chat-text {
+  font-size: 1em;
+  color: gray;
+}
+
 
 .central-chat {
   

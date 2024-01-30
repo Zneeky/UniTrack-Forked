@@ -3,11 +3,9 @@ import { tap } from 'rxjs';
 import { LocalStorageKeys } from 'src/app/shared/enums/local-storage-keys.enum';
 import { MessageHistoryResult } from 'src/app/shared/models/message-hisotry';
 import { MessageResult } from 'src/app/shared/models/message-result';
-import { StudentProfile } from 'src/app/shared/models/student-profile';
 import { UserResult } from 'src/app/shared/models/user-result';
 import { ChatRequestsService } from 'src/app/shared/services/chat.requests.service';
 import { ChatService } from 'src/app/shared/services/chat.service';
-
 
 
 interface ChatEntry {
@@ -32,8 +30,10 @@ export class ChatComponent implements OnInit {
   contactsData: UserResult[] = [];
   message: string = '';
   chatsHistory: MessageHistoryResult[] = [];
-selected: any;
-color: any;
+  selected: any;
+  color: any;
+  isSelectedChat: boolean = false;
+
   constructor(
     // private teachersService: TeachersService,
     public chatService: ChatService,
@@ -105,7 +105,7 @@ color: any;
     };
     this.selectedChatIndex = index;    
    
-
+    this.isSelectedChat = true;
     this.chatRequestsService.getMessagesInChat(userId).subscribe(
       (messageResults: MessageResult[]) => {
         this.selectedChat.messages = messageResults.map((msgResult) => {

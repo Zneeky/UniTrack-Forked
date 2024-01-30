@@ -30,7 +30,7 @@
     </div>
 
     <!-- Central Area for Selected Chat -->
-    <div class="central-chat" [style.backgroundImage]="centralChatBackgroundImage">
+    <div *ngIf = "isSelectedChat" class="central-chat" [style.backgroundImage]="centralChatBackgroundImage">
       <div class="chat-header">
         <span>{{ selectedChat.personName }}</span>
         <button id="settingsButton" (click)="toggleSettings()"></button>
@@ -65,7 +65,15 @@
         </button>
       </div>
     </div>
+    <div *ngIf="!isSelectedChat" class="no-chat-selected">
+      <mat-icon class="icon-size">chat</mat-icon>
+      <div class="text-container">
+        <p class="your-messages-text">Your messages</p>
+        <p class="select-chat-text">Select chat and send messages</p>
+      </div>
+    </div>
   </div>
+
 
   <div class="overlay" *ngIf="showSettings">
     <div class="settings-div">
