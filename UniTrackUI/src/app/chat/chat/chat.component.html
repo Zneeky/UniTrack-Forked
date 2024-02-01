@@ -2,7 +2,7 @@
 <div>
     <div class="top-row" >
       <div class="top-row-person" *ngFor="let contacts of contactsData; let i = index " (click)="selectChat(contacts.firstName, contacts.userId , i)">
-        <img [src]="contacts.avatarUrl" alt="pic" class="profile-pic">
+        <img class="image" [src]="contacts.avatarUrl" alt="pic" class="profile-pic">
         {{contacts.firstName}} {{contacts.lastName}}
       </div>
     </div>
